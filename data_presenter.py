@@ -32,4 +32,31 @@ print("The sum of all invoice totals is ${:0.2f}".format(sum))
 
 # Problem 7
 open_file.close()
-    
+
+
+# Part 3 - to run in replit
+import matplotlib.pyplot as plt
+
+open_file.seek(0)
+
+choc_amt = 0
+van_amt = 0
+str_amt = 0
+
+for row in open_file:
+    items = row.split(",")
+    if items[2] == "Chocolate":
+        choc_amt += int(items[2])
+    elif items[2] == "Vanilla":
+        van_amt += int(items[2])
+    else:
+        str_amt += int(items[2])
+
+cupcake_types = ["Chocolate", "Vanilla", "Strawberry"]
+type_quantities = [choc_amt, van_amt, str_amt]
+
+plt.bar(cupcake_types, type_quantities)
+plt.xlabel("Cupcake Type")
+plt.ylabel("Amount purchased")
+plt.title("Cupcake Sales Vs Type")
+plt.show()
