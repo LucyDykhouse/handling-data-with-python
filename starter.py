@@ -1,32 +1,39 @@
 # PROBLEM 1
 # Create a variable that holds the value of your first name.
-
+first_name = "Lucy"
 
 # PROBLEM 2
 # Create a variable that holds the value of your favorite number.
-
+favorite_number = 60
 
 # PROBLEM 3
 # Create a variable that holds a boolean value representing if your hair is brown.
-
+hair_brown = True
 
 # PROBLEM 4
 # Print your first name, by printing the variable created in problem 1.
-
+print(first_name)
 
 # PROBLEM 5
 #  Create a variable called `loves_code` and set it equal to true. 
 #  Check to see if `loves_code` is equal to true or false. 
 #  If it is true, print "I love to code!"
 #  If it is not, print "Coding has it's challenges."
+loves_code = True
+
+if loves_code == True:
+    print("I love to code!")
+else:
+    print("Coding has its challenges")
 
 
 # PROBLEM 6
 # Create an array called `colors` and set it equal to a list of at least five colors.
-
+colors = ["red", "orange", "yellow", "green", "blue", "indigo", "violet"]
 
 # Problem 7
 # Using bracket syntax, print out the last item in your colors array.
+print(colors[len(colors) - 1])
 
 
 # For problems 8-9, use the following line of code:
